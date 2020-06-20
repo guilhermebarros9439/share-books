@@ -1,0 +1,204 @@
+.profile {
+    height: auto;
+    min-height: 100vh;
+}
+
+    .profile header {
+        display: block;
+    }
+
+        .profile header .container {
+            /* Container */
+            width: 90%;
+            max-width: 1360px;
+            margin: 0 auto;
+
+            /* Flex */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            .profile header .container .profile-info button {
+                display: flex;
+                align-items: center;
+                transition: .5s ease;
+                outline: 0;
+            }
+
+            .profile header .container .profile-info button:hover {
+                filter: opacity(70%);
+            }
+
+            .profile header .container .profile-info button:hover p {
+                display: block;
+            }
+
+                .profile header .container .profile-info button img {
+                    margin: 20px 20px 20px 0;
+                    border-radius: 50%;
+                    border-width: 2px;
+                    width: 60px;
+                }
+
+                .profile header .container .profile-info button h3 {
+                    text-transform: capitalize;
+                }
+
+                .profile header .container .profile-info button p {
+                    margin-left: 10px;
+                    font-size: 10px;
+                    border-radius: 10px;
+                    padding: 2px 5px;
+
+                    display: none;
+                }
+            
+            .profile header .container button {
+                background-color: transparent;
+                border: none;
+
+                display: flex;
+                align-items: center;
+                font-size: 20px;
+                transition: .2s ease;
+            }
+
+            .profile header .container button svg {
+                margin-left: 10px;
+            }
+
+    .profile main {
+        width: 90%;
+        max-width: 960px;
+        margin: 150px 0;
+    }
+
+        .profile main .library-title {
+            margin: 30px;
+        }
+
+        .profile main .library-title h1 {
+            font-size: 40px;
+        }
+
+        .profile main .library {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(4, 1fr);
+
+            align-items: center;
+        }
+
+            .profile main .library .book {
+                border-radius: 10px;
+                padding: 20px;
+                height: 100%;
+
+                position: relative;
+                box-shadow: 0 5px 10px #0003;
+            }
+
+            .profile main .library .book:hover .edit-button {
+                display: block;
+            }
+
+                .profile main .library .book img {
+                    width: 100%;
+                }
+
+                .profile main .library .book .edit-button {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+
+                    border-radius: 4px;
+                    border: none;
+
+                    padding: 5px;
+
+                    transition: .3s ease;
+                    display: none;
+                }
+
+                .profile main .library .book .edit-button:hover {
+                    box-shadow: 0 2px 10px #0005;
+                }
+
+                .profile main .library .book .book-info p.donation {
+                    display: inline-block;
+
+                    margin: 10px 0;
+                    font-size: 12px;
+                    font-weight: 500;
+
+                    border-radius: 8px;
+                    padding: 3px 8px;
+                    box-shadow: 0 3px 3px #0004;
+                }
+
+                .profile main .library .book .book-info h2 {
+                    text-transform: capitalize;
+                }
+
+                .profile main .library .book .book-info p.description {
+                    opacity: .7;
+                    font-size: 12px;
+                }
+
+                .profile main .library .book .book-info p.description::first-letter {
+                    text-transform: uppercase;
+                }
+
+        .profile main .library li:last-child {
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile main .library .new-book {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            box-shadow: 0 5px 10px #0003;
+
+            font-size: 35px;
+            font-weight: 300;
+        }
+
+@media (max-width: 900px) {
+    .profile main .library {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 800px) {
+    .profile main .library {
+        grid-template-columns: 1fr;
+    }
+
+        .profile main .library .book {
+            display: grid;
+            gap: 60px;
+            grid-template-columns: 1fr 3fr;
+            align-items: center;
+        }
+
+            .profile main .library .book .book-info h2 {
+                font-size: 30px;
+            }
+
+            .profile main .library .book .book-info p.description {
+                font-size: 20px;
+            }
+
+        .profile main .library .new-book {
+            margin: 30px 0 0;
+        }
+}

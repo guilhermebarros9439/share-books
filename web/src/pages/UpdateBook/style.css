@@ -1,0 +1,41 @@
+.create-book .form {
+    position: relative;
+}
+
+.create-book .form form {
+    text-align: left;
+}
+
+    .create-book .form label {
+        display: block;
+        margin: 10px 0 20px 5px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+        .create-book .form label input {
+            margin: 0 5px;
+        }
+
+    .create-book .form hr {
+        margin: 10px 0;
+    }
+
+    .create-book .form a {
+        margin-top: 10px;
+    }
+
+    .create-book .form button.delete-book {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+        border-radius: 4px;
+
+        padding: 5px;
+        transition: .5s ease;
+    }
+
+    .create-book .form button.delete-book:hover {
+        box-shadow: 0 2px 10px #0005;
+    }

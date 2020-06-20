@@ -1,0 +1,47 @@
+/* --- Register specifications --- */
+.register {
+    height: 170vh;
+}
+
+.register .map {
+    height: 400px;
+    margin: 20px 0;
+}
+
+/* Register form */
+    .register .form {
+        text-align: left;
+        padding: 60px 30px;
+        position: relative;
+    }
+
+    .register .form hr {
+        margin: 20px 0;
+    }
+
+    .register .form form > input {
+        width: 30%;
+    }
+
+        .register .form .input-group + .input-group input:first-child {
+            flex: 2;
+        }
+
+        .register .form .input-group + .input-group input:last-child {
+            flex: 1;
+        }
+
+    .register .form button.delete-book {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+        border-radius: 4px;
+
+        padding: 5px;
+        transition: .5s ease;
+    }
+
+    .register .form button.delete-book:hover {
+        box-shadow: 0 2px 10px #0005;
+    }

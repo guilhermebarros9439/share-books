@@ -1,0 +1,31 @@
+/* --- Register specifications --- */
+.register {
+    height: 170vh;
+}
+
+.register .map {
+    height: 400px;
+    margin: 20px 0;
+}
+
+/* Register form */
+    .register .form {
+        text-align: left;
+        padding: 60px 30px;
+    }
+
+    .register .form hr {
+        margin: 20px 0;
+    }
+
+    .register .form form > input {
+        width: 30%;
+    }
+
+        .register .form .input-group + .input-group input:first-child {
+            flex: 2;
+        }
+
+        .register .form .input-group + .input-group input:last-child {
+            flex: 1;
+        }

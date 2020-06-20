@@ -1,0 +1,8 @@
+/node_modules
+*.sqlite
+/uploads/*
+/!uploads/.gitkeep
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
